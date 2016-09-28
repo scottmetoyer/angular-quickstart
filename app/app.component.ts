@@ -1,6 +1,12 @@
 import { Component } from '@angular/core';
+import { RacesComponent } from './races.component';
+
 @Component({
-  selector: 'my-app',
-  template: '<h1>My First Angular App</h1>'
+  selector: 'racing-app',
+  template: `<h1>{{heading}}</h1>
+  <my-races></my-races>`
 })
-export class AppComponent { }
+export class AppComponent { 
+  heading = 'Ultra Racing'
+}
+
